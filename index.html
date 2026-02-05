@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>💖 Walentynkowa Zagadka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>💘 Dla Ciebie</h1>
+
+    <p class="message">
+        <!-- TU WPISZ SWÓJ TEKST -->
+        Przygotowałem dla ciebię zagadkę walentynkową podążaj za wskazówkami i otrztmasz kod do kłódki 💌
+    </p>
+
+    <h2>❤️ Memory miłości ❤️</h2>
+    <p class="instruction">
+        obejrzyj filmik i rozwiąż memory które dadzą ci dalsze instrukcję ❤️
+    </p>
+
+    <div class="video-section">
+    <h2>🎥 Dla Ciebie</h2>
+
+    <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/NuDoooVhg5M?si=NJabaTKuWzT3wGJZ"
+            title="Film walentynkowy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+    <div class="memory-game" id="game"></div>
+
+    <div id="reward" class="hidden">
+        <h2>🎁 Udało się!</h2>
+        <p>Skopiuj poniższy tekst:</p>
+
+        <div class="code-box" id="code">
+            WALENTYNKI_❤️_TY_I_JA
+        </div>
+
+        <button onclick="copyText()">📋 Skopiuj</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
