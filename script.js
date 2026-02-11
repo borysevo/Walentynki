@@ -1,3 +1,4 @@
+const ACCESS_CODE = "Maja";
 const symbols = ["❤️","💌","💘","🌹","😍","💕"];
 let cards = [...symbols, ...symbols];
 cards.sort(() => 0.5 - Math.random());
@@ -68,4 +69,17 @@ function copyText() {
     const text = document.getElementById("code").innerText;
     navigator.clipboard.writeText(text);
     alert("💖 Tekst skopiowany!");
+
+}
+function checkCode() {
+    const input = document.getElementById("accessCode").value;
+    const error = document.getElementById("codeError");
+    const game = document.getElementById("game");
+
+    if (input === ACCESS_CODE) {
+        game.classList.remove("hidden");
+        error.classList.add("hidden");
+    } else {
+        error.classList.remove("hidden");
+    }
 }
