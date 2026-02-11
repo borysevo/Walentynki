@@ -1,4 +1,4 @@
-const ACCESS_CODE = "9537";
+
 const symbols = ["❤️","💌","💘","🌹","😍","💕"];
 let cards = [...symbols, ...symbols];
 cards.sort(() => 0.5 - Math.random());
@@ -83,7 +83,7 @@ function checkCode() {
         error.classList.remove("hidden");
     }
 }
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
     const ACCESS_CODE = "LOVE2026";
 
@@ -92,17 +92,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const error = document.getElementById("codeError");
     const game = document.getElementById("game");
 
-    button.addEventListener("click", () => {
-        if (input.value === ACCESS_CODE) {
-            game.classList.remove("hidden");
-            error.classList.add("hidden");
-        } else {
-            error.classList.remove("hidden");
-        }
-    });
+    if (button) {
+        button.addEventListener("click", function () {
+            if (input.value === ACCESS_CODE) {
+                game.classList.remove("hidden");
+                error.classList.add("hidden");
+            } else {
+                error.classList.remove("hidden");
+            }
+        });
+    }
 
 });
-
 
 
 
