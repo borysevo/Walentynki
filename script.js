@@ -1,4 +1,4 @@
-const ACCESS_CODE =9537";
+const ACCESS_CODE = "9537";
 const symbols = ["❤️","💌","💘","🌹","😍","💕"];
 let cards = [...symbols, ...symbols];
 cards.sort(() => 0.5 - Math.random());
@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
 
 
 
