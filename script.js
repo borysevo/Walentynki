@@ -69,8 +69,8 @@ function copyText() {
     const text = document.getElementById("code").innerText;
     navigator.clipboard.writeText(text);
     alert("💖 Tekst skopiowany!");
-
 }
+
 function checkCode() {
     const input = document.getElementById("accessCode").value;
     const error = document.getElementById("codeError");
