@@ -34,7 +34,16 @@
     </div>
 </div>
 
-    <div class="memory-game" id="game"></div>
+    <div class="access-section">
+    <p><strong>🔐 Wpisz kod, aby odblokować kolejną część</strong></p>
+
+    <input type="text" id="accessCode" placeholder="Wpisz kod..." />
+    <button onclick="checkCode()">Odblokuj</button>
+
+    <p id="codeError" class="error hidden">Niepoprawny kod ❌</p>
+</div>
+    
+    <div class="memory-game hidden" id="game"></div>
 
     <div id="reward" class="hidden">
         <h2>🎁 Udało się!</h2>
@@ -52,3 +61,4 @@
 </body>
 
 </html>
+
