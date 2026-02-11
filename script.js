@@ -85,7 +85,7 @@ function checkCode() {
 }
 document.addEventListener("DOMContentLoaded", function () {
 
-    const ACCESS_CODE = "LOVE2026";
+    const ACCESS_CODE = "9537";
 
     const button = document.getElementById("unlockBtn");
     const input = document.getElementById("accessCode");
@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
 
 
 
