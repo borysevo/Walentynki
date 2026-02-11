@@ -83,4 +83,23 @@ function checkCode() {
         error.classList.remove("hidden");
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+
+    const ACCESS_CODE = "LOVE2026";
+
+    const button = document.getElementById("unlockBtn");
+    const input = document.getElementById("accessCode");
+    const error = document.getElementById("codeError");
+    const game = document.getElementById("game");
+
+    button.addEventListener("click", () => {
+        if (input.value === ACCESS_CODE) {
+            game.classList.remove("hidden");
+            error.classList.add("hidden");
+        } else {
+            error.classList.remove("hidden");
+        }
+    });
+
+});
 
